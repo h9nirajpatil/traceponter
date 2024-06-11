@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pointer Location</title>
+</head>
+
+<body>
+    <h1>Trace User Pointer Location</h1>
+    <script>
+        function locatePointer(event) {
+            const x = event.clientX;
+            const y = event.clientY;
+
+            console.clear();
+            console.log(x, y);
+        }
+        document.addEventListener('mousemove', locatePointer);
+
+    </script>
+</body>
+
+</html>
